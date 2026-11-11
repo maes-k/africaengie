@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simulateur de consommation | AfricaEngie</title><meta name="description" content="Solutions solaires pour entreprises et particuliers en Côte d’Ivoire."><link rel="stylesheet" href="style.css?v=20261111-images"></head>
+<body>
+<div class="top"><span>L’énergie d’Afrique. L’avenir commence ici.</span><span>Partout en Côte d’Ivoire <b>•</b> <a href="tel:+2250716772115">+225 07 16 77 21 15</a></span></div>
+<header><a class="brand" href="index.html"><img src="assets/logo.webp" alt="AfricaEngie — L’énergie d’Afrique" width="400" height="355" loading="eager" decoding="async"></a>
+<nav id="nav"><a  href="index.html">Accueil</a><a href="solutions.html">Nos solutions</a><a href="approche.html">Notre approche</a><a href="simulateur.html" class="active" aria-current="page">Simulateur</a><a href="contact.html">Contact</a></nav>
+<a class="button small" href="contact.html">Parlons de votre projet <span>→</span></a><button id="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button></header>
+<main>
+<section class="page-banner">
+<div class="wrap">
+<div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Simulateur</div>
+<div class="eyebrow"><i></i> AFRICAENGIE — CÔTE D’IVOIRE</div>
+<h1>Votre projet commence<br>par vos usages.</h1>
+<p>Préparez votre échange avec AfricaEngie grâce à une première estimation de votre consommation.</p>
+</div>
+</section>
+<section id="simulateur" class="estimator section">
+<div class="wrap estimator-grid">
+<div>
+<div class="eyebrow"><i></i> VOTRE PREMIER PAS VERS LE SOLAIRE</div>
+<h2>Et si on commençait<br>par <em>vos besoins ?</em></h2>
+<p>Quelques équipements, leurs heures d’utilisation…<br>Préparez une première estimation de votre consommation quotidienne.</p>
+<div class="est-note"><span>☀</span>
+<p>Sans inscription.<br><strong>Une estimation pour ouvrir la discussion.</strong></p>
+</div>
+</div>
+<div class="calculator">
+<div class="calc-head"><span class="eyebrow">MON ESTIMATION SOLAIRE</span><span>ϟ</span></div>
+<label for="device">Votre équipement</label><select id="device"><option value="10">Éclairage LED — 10 W</option><option value="75">Téléviseur — 75 W</option><option value="60">Ventilateur — 60 W</option><option value="65">Ordinateur portable — 65 W</option><option value="1200">Climatiseur — 1 200 W</option><option value="100">Autre équipement</option></select>
+<div class="calc-fields">
+<div><label for="watts">Puissance par appareil (W)</label><input id="watts" type="number" min="1" max="100000" value="10"></div>
+<div><label for="custom-name">Nom de l’équipement (facultatif)</label><input id="custom-name" maxlength="80" placeholder="Ex. : ordinateur du bureau"></div>
+</div>
+<div class="calc-fields">
+<div><label for="qty">Nombre d’appareils</label><input id="qty" type="number" min="1" max="100" value="4"></div>
+<div><label for="hours">Heures par jour</label><input id="hours" type="number" min="0.5" max="24" step="0.5" value="6"></div>
+</div>
+<button class="add" id="add">+ Ajouter à mon estimation</button>
+<ul id="equipment" aria-label="Équipements ajoutés"></ul>
+<p class="equipment-empty" id="equipment-empty">Ajoutez un appareil pour commencer.</p>
+<div class="result" aria-live="polite"><span>Consommation quotidienne estimée</span><strong><span id="total">0,00</span> <small>kWh/jour</small></strong></div>
+<div class="estimate-breakdown">
+<div><span>Sur 30 jours d’usage identique</span><strong id="monthly">0,00 kWh</strong></div>
+<div><span>Somme des puissances nominales</span><strong id="rated-power">0 W</strong></div>
+</div>
+<p class="fine">La somme des puissances ne détermine pas à elle seule la taille de l’onduleur : simultanéité et appels de courant doivent être étudiés.</p>
+<div class="calculator-tools"><button type="button" id="example-load">Charger un exemple</button><button type="button" id="clear-load">Tout effacer</button></div>
+<a class="button full" href="contact.html" id="transfer">Faire étudier mes besoins <span>→</span></a>
+<p class="fine">Puissances indicatives. Cette estimation de consommation ne remplace pas une étude technique.</p>
+</div>
+</div>
+</section>
+<section class="section wrap simulator-notes">
+<div>
+<h3>Ce que vous obtenez</h3>
+<p>Une estimation de l’énergie consommée chaque jour par les appareils renseignés, exprimée en kWh/jour.</p>
+</div>
+<div>
+<h3>La prochaine étape</h3>
+<p>Une étude complète précise la puissance solaire, l’onduleur et la capacité des batteries en tenant compte de votre site et de vos usages simultanés.</p>
+</div>
+</section>
+<section class="section deep-section deep-tint">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<div class="eyebrow"><i></i>COMMENT LIRE VOTRE ESTIMATION</div>
+<h2>Des watts aux kilowattheures.</h2>
+</div>
+</div>
+<div class="deep-grid">
+<article class="deep-card"><span class="deep-number">01</span>
+<h3>La puissance, en W</h3>
+<p>C’est la puissance utilisée pour le calcul. Relevez-la sur la plaque signalétique ou dans la documentation de l’appareil, puis ajustez la valeur proposée.</p>
+</article>
+<article class="deep-card"><span class="deep-number">02</span>
+<h3>La durée, en heures</h3>
+<p>Indiquez une durée d’utilisation quotidienne représentative. La consommation d’un appareil cyclique peut nécessiter des données plus précises.</p>
+</article>
+<article class="deep-card"><span class="deep-number">03</span>
+<h3>L’énergie, en kWh</h3>
+<p>Le calcul multiplie puissance, quantité et durée, puis divise par 1 000. Il donne une consommation estimée, pas la puissance de panneaux à installer.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section deep-section ">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<div class="eyebrow"><i></i>UN EXEMPLE SIMPLE</div>
+<h2>4 lampes. 6 heures.<br>Un premier repère.</h2>
+</div>
+</div>
+<div class="calculation-example"><span>4 appareils</span><b>×</b><span>10 W</span><b>×</b><span>6 h / jour</span><b>÷</b><span>1 000</span><b>=</b><strong>0,24 kWh / jour</strong></div>
+<p class="deep-note">Ajoutez ensuite les autres appareils. Pour un réfrigérateur ou un climatiseur, les cycles de fonctionnement font varier la consommation : une mesure ou une consommation documentée affine l’étude.</p>
+</div>
+</section>
+<section class="section deep-section ">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<div class="eyebrow"><i></i>DE L’ESTIMATION À L’ÉTUDE</div>
+<h2>Ce qu’il reste à préciser.</h2>
+</div>
+</div>
+<div class="deep-questions">
+<details>
+<summary>Pourquoi le résultat ne donne-t-il pas un nombre de panneaux ?</summary>
+<p>La production dépend notamment de la localisation, de l’orientation, des ombrages et des pertes du système. Les horaires de consommation et le stockage comptent aussi dans le dimensionnement.</p>
+</details>
+<details>
+<summary>Cette estimation indique-t-elle mon autonomie ?</summary>
+<p>Non. L’autonomie dépend des charges retenues, de la capacité utilisable des batteries, de leur état et du rendement des équipements. Elle nécessite un calcul complémentaire.</p>
+</details>
+<details>
+<summary>Mes coordonnées sont-elles nécessaires pour calculer ?</summary>
+<p>Non. Le calcul se fait directement dans cette page. Si vous choisissez de faire étudier vos besoins, votre liste sera reprise sur la page Contact dans ce même onglet.</p>
+</details>
+</div>
+</div>
+</section>
+<section class="page-cta">
+<div class="wrap">
+<div><span class="eyebrow light">ALLONS PLUS LOIN</span>
+<h2>Faites préciser votre projet.</h2>
+</div>
+<a class="button" href="contact.html">Échanger avec AfricaEngie →</a></div>
+</section>
+</main>
+<footer>
+<div class="wrap footer-main"><a class="footer-logo" href="index.html"><img src="assets/logo.webp" alt="AfricaEngie" width="400" height="355" loading="eager" decoding="async"></a>
+<p>Le soleil comme ressource.<br>Votre avenir comme horizon.</p>
+<div><strong>EXPLORER</strong><a href="solutions.html">Nos solutions</a><a href="simulateur.html">Estimer mes besoins</a><a href="contact.html">Nous contacter</a></div>
+<div><strong>RESTONS EN CONTACT</strong><a href="tel:+2250716772115">+225 07 16 77 21 15</a><a href="mailto:africaengieci@gmail.com">africaengieci@gmail.com</a><span>Côte d’Ivoire</span></div>
+</div>
+<div class="wrap footer-bottom"><span>© 2026 AfricaEngie — L’énergie d’Afrique</span><span>Maquette de présentation · Visuels d’illustration</span></div>
+</footer>
+<div class="mobile-actions"><a href="contact.html">Demander un devis →</a><a href="https://wa.me/2250716772115" target="_blank" rel="noopener">WhatsApp →</a></div>
+<script src="app.js"></script>
+</body>
+</html>
