@@ -98,3 +98,10 @@ Les polices DM Sans et Manrope sont chargées via Google Fonts avec des polices 
 
 Documentation officielle :
 https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+## Mise à jour de lisibilité — 12 novembre 2026
+
+Les petits textes ont été agrandis sur les cinq pages. Le menu se replie également sur tablette pour conserver de l’espace. Les champs de formulaire utilisent une police de 16 px.
+Pour mettre à jour votre site, remplacer les fichiers HTML, style.css et app.js par ceux de cette archive, puis envoyer les changements sur GitHub. Le dossier assets est inclus pour une installation complète.
+
+Mise à jour : les textes précédemment à 14 px passent à 16 px sur les cinq pages.
