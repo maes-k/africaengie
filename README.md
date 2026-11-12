@@ -105,3 +105,5 @@ Les petits textes ont été agrandis sur les cinq pages. Le menu se replie égal
 Pour mettre à jour votre site, remplacer les fichiers HTML, style.css et app.js par ceux de cette archive, puis envoyer les changements sur GitHub. Le dossier assets est inclus pour une installation complète.
 
 Mise à jour : les textes précédemment à 14 px passent à 16 px sur les cinq pages.
+
+Mise à jour : suppression du bandeau supérieur sur les cinq pages. Coordonnées conservées dans le contenu et le pied de page.
